@@ -1,0 +1,9 @@
+PUT http://localhost:3001/api/blogs/69552a88431e765e70810418
+Content-Type: application/json
+
+{
+  "title": "Happy New Year",
+  "author": "Minku Singh",
+  "url": "https://www.minkusingh.com/year-end",
+  "likes": 1100
+}

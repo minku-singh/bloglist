@@ -2,8 +2,9 @@ POST http://localhost:3001/api/blogs
 Content-Type: application/json
 
 {
-  "title": "How I learnt backend",
+  "title": "Hi, my intro!",
   "author": "Minku Singh",
-  "url": "https://www.minkusingh.com/backend",
-  "likes": 1100
+  "url": "https://www.minkusingh.com/me",
+  "likes": 100,
+  "userId": "6957e1771a8bdb295e56a1f5"
 }
