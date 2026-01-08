@@ -60,7 +60,15 @@ bloglistRouter.put('/:id', async (request, response, next) => {
   blog.likes = likes
 
   const updatedBlog = await blog.save()
+  console.log(updatedBlog);
+  
   response.json(updatedBlog)
+})
+
+bloglistRouter.delete('/:id', async (request, response) => {
+  const deletedBlog = await Bloglist.findByIdAndDelete(request.params.id)
+
+  response.status(204).json(deletedBlog)
 })
 
 
